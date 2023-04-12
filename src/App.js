@@ -12,10 +12,8 @@ import Container from "react-bootstrap/Container";
 export default function App() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
- /* const [story, setStory] = useState(getStoriesFromLS);//neat trick from @programmingcool. save previous stories
-  //console.log(story)
-  localStorage.setItem("story", JSON.stringify(story));*/
   const [story, setStory] = useState([]);
+  //console.log(story)
 
   return (
     <>
@@ -60,12 +58,4 @@ export default function App() {
 
     </>
   );
-  /*function getStoriesFromLS() {
-    let story = JSON.parse(localStorage.getItem("story"));
-    if(story) {
-      return story;
-    } else {
-      return [];
-    }
-  }*/
 }

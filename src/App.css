@@ -13,3 +13,7 @@ ul {
 label {
     color: black;
 }
+
+.display-stories {
+    border: solid black;
+}

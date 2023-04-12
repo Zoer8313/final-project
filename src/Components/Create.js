@@ -8,8 +8,7 @@ export default function Create({
   setDesc,
   story,
   setStory,
-  setEditId, 
-  element
+  setEditId
 }) {
   let counter = 0;
 
