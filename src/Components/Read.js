@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
-import Favorites from "./Favorites";
 
 const Read = ({ stories, addFavorite }) => {
   //console.log(stories);
@@ -14,20 +13,26 @@ const Read = ({ stories, addFavorite }) => {
       </div>
       <p />
       <div>
-        {stories.map((story) => (
-          <div>
-            <Container key={story.id} className="each-story-container scroll">
-              <h3>
-                <u>{story.title}</u>
-              </h3>
-              <button className="btn btn-dark" onClick={() => addFavorite(story)}>
-                Add to Favorites
-              </button>
-              <p>{story.desc}</p>
-            </Container>
-            <br />
-          </div>
-        ))}
+        {stories.map((story) => {
+          let key = performance.now(); /*looooooooove it*/
+          return (
+            <div key={key}>
+              <Container key={key} className="each-story-container scroll">
+                <h3>
+                  <u>{story.title}</u>
+                </h3>
+                <button
+                  className="btn btn-dark"
+                  onClick={() => addFavorite(story)}
+                >
+                  Add to Favorites
+                </button>
+                <p>{story.desc}</p>
+              </Container>
+              <br />
+            </div>
+          );
+        })}
       </div>
     </>
   );

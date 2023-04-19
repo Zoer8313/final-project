@@ -17,8 +17,6 @@ export default function App() {
   const [favorites, setFavorites] = useState([]);
   //console.log(story)
 
-  
-  
   const addFavorite = (story) => {
     setFavorites([...favorites, story]);
   };
