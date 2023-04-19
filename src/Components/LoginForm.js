@@ -6,13 +6,13 @@ export default function LoginForm() {
       <div className="container">
         <form>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
+            <label htmlFor="exampleInputEmail1">Email Address</label>
             <input
               type="email"
               className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Enter email"
+              placeholder="Enter Email"
             />
           </div>
           <div className="form-group">
@@ -26,9 +26,9 @@ export default function LoginForm() {
           </div>
           <button type="submit" className="btn btn-dark">
             Submit
-          </button>
+          </button><br />
         </form>
-      </div>
+      </div><br />
     </>
   );
 }

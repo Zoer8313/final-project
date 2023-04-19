@@ -5,9 +5,10 @@ export default function Home() {
 
   return (
     <>
-    <div>Home</div><br />
-    <p><b>LOGIN</b></p>
-    <LoginForm />
+    <div className = "header"><h1><b>Home</b></h1></div>
+    <p />
+    <h4><p><b>LOGIN</b></p></h4>
+    <LoginForm /><br />
     </>
   )
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import EditModal from "./EditModal";
-import Create from "./Create";
+import { Container } from "react-bootstrap";
 
 export default function UserWorks({ element, story, setStory, desc, setDesc }) {
   const [editId, setEditId] = useState("");
@@ -19,11 +19,11 @@ export default function UserWorks({ element, story, setStory, desc, setDesc }) {
 
   return (
     <>
-      <div className="container">
+      <Container>
         <div className="card">
           <div className="card-header">
-            <h5 className="card-title">{element.title}</h5>
-            <div className="card-body">{element.desc}</div>
+            <h5 className="card-title"><u>{element.title}</u></h5>
+
             <a href="#">
               <EditModal
                 element={element}
@@ -35,9 +35,6 @@ export default function UserWorks({ element, story, setStory, desc, setDesc }) {
                 setEditId={setEditId}
               />
             </a>
-            <a href="#" className="btn btn-dark">
-              Share
-            </a>{" "}
             <a
               href="#"
               className="btn btn-danger"
@@ -47,9 +44,11 @@ export default function UserWorks({ element, story, setStory, desc, setDesc }) {
             >
               Delete
             </a>
+
+            <div className="card-body scroll">{element.desc}</div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

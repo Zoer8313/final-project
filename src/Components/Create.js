@@ -50,17 +50,17 @@ export default function Create({
 
   return (
     <>
-      <div>Create</div>
+      <div className = "header"><h1><b>Create</b></h1></div><br />
       <br />
 
-      <h4>Write a New Story!</h4>
+      <h4><u>Write a New Story!</u></h4>
 
       <div className="container">
         <form>
           <div className="mb-3">
-            <label htmlFor="title" className="form-label">
+            <label htmlFor="title" className="form-label"><h4>
               Title
-            </label>
+            </h4></label>
             <input
               type="text"
               className="form-control"
@@ -71,14 +71,15 @@ export default function Create({
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="exampleText" className="form-label">
+            <label htmlFor="exampleText" className="form-label"><h4>
               Write Your Story!
-            </label>
+            </h4></label>
             <textarea
               name="desc"
               id="desc"
               rows="3"
               className="form-control"
+              placeholder="Once upon a time..."
               value={desc}
               onChange={inputHandler}
             ></textarea>
@@ -88,7 +89,7 @@ export default function Create({
             className="btn btn-dark"
             onClick={addStoryHandler}
           >
-            Save
+            Save & Share
           </button>{" "}
           <button type="submit" className="btn btn-danger">
             Delete
@@ -98,12 +99,12 @@ export default function Create({
       <br />
 
       <div>
-      <h4>Your Saved Projects</h4>
+      <h4><u>Your Saved Projects</u></h4>
         {story.map((element) => {
           return <UserWorks element = {element} key = {element.id} story = {story} setStory = {setStory} setEditId = {setEditId}  />;
         })}
       </div>
-      <br />
+      
     </>
   );
 }
