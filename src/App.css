@@ -35,8 +35,8 @@ input {
     color: gray;
 }
 
-#new-member-card {
-    backdrop-filter: blur(2px);
+.new-member-card {
+    backdrop-filter: blur(1px);
 }
 
 * {/*all*/
@@ -71,4 +71,8 @@ button {
 .scroll {/*loooooove*/
     overflow-y: auto;
     height: 300px;
+}
+
+.home-warning {
+    height: 809px;
 }

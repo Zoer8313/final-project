@@ -13,6 +13,7 @@ const Favorites = ({ favorites }) => {
       <div>
         {favorites.map((favorite) => {
           let key = performance.now();
+          //console.log(performance.now())NEAT
           return (
             <div key={key}>
               <Container key={key} className="each-story-container scroll">
