@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Read from "./Components/Read";
 import Create from "./Components/Create";
 import NewMember from "./Components/NewMember";
+import About from "./Components/About";
 import Favorites from "./Components/Favorites";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
@@ -31,11 +32,14 @@ export default function App() {
             <Link to="/">Home</Link>
           </Button>
           <Button variant = "outline-dark" className = "m-2">
-            <Link to="/read">Read</Link>
+            <Link to="/about">About</Link>
           </Button>
           <Button variant = "outline-dark" className = "m-2">
             <Link to="/create">Create</Link>
           </Button>
+          <Button variant = "outline-dark" className = "m-2">
+            <Link to="/read">Read</Link>
+          </Button>    
           <Button variant = "outline-dark" className = "m-2">
             <Link to="/favorites">Favorites</Link>
           </Button>
@@ -47,6 +51,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/read" element={<Read stories = {story} addFavorite = {addFavorite} />} />
         <Route
           path="/create"

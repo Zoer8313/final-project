@@ -73,6 +73,11 @@ button {
     height: 300px;
 }
 
-.home-warning {
-    height: 809px;
+.vennImg {
+    width: 500px;
+}
+
+img {
+    border: solid black;
+    border-radius: 12px;
 }
