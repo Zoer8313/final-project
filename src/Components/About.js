@@ -24,7 +24,10 @@ export default function About() {
             <p>Anyhow, I'm moving to a new town, with my baby girl, and basically hitting reset. It might not look like much, but 18 weeks ago, 
                 I wouldn't have dreamed I'd be able to make something that looks like this. Cheesey? Yes. Functional? Somewhat! To a degree that 
                 at least makes it a <i>little</i> fun for the user. I know I have a long way to go, and have many items on my list that still need
-                 to get checked off- more added every minute- but it's something I can say I did.  </p>
+                 to get checked off- more added every minute- but it's something I can say I did. I don't forsee myself landing a career in tech any 
+                 time soon, unfortunately- I don't have that inherent knack for it that a lot of my classmates showed- but I figure I will get myself
+                 a space, and practice it up, until I get to a place that I can feel confident about. Thanks to everyone for the help that brought me 
+                 to this point in my journey! </p>
         </h6>
       </div>
       <div></div>
